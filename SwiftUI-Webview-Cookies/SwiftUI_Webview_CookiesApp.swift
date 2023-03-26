@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_Webview_CookiesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

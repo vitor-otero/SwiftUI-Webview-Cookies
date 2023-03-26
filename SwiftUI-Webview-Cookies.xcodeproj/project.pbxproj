@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		C4FE9A3129D08711006C0016 /* SwiftUI_Webview_CookiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE9A3029D08711006C0016 /* SwiftUI_Webview_CookiesApp.swift */; };
-		C4FE9A3329D08711006C0016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE9A3229D08711006C0016 /* ContentView.swift */; };
 		C4FE9A3529D08712006C0016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FE9A3429D08712006C0016 /* Assets.xcassets */; };
 		C4FE9A3829D08712006C0016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FE9A3729D08712006C0016 /* Preview Assets.xcassets */; };
+		C4FE9A3F29D08748006C0016 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE9A3E29D08748006C0016 /* WebView.swift */; };
+		C4FE9A4129D0877E006C0016 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FE9A4029D0877E006C0016 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4FE9A2D29D08711006C0016 /* SwiftUI-Webview-Cookies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Webview-Cookies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FE9A3029D08711006C0016 /* SwiftUI_Webview_CookiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Webview_CookiesApp.swift; sourceTree = "<group>"; };
-		C4FE9A3229D08711006C0016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4FE9A3429D08712006C0016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4FE9A3729D08712006C0016 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4FE9A3E29D08748006C0016 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		C4FE9A4029D0877E006C0016 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				C4FE9A3029D08711006C0016 /* SwiftUI_Webview_CookiesApp.swift */,
-				C4FE9A3229D08711006C0016 /* ContentView.swift */,
+				C4FE9A4029D0877E006C0016 /* MainView.swift */,
+				C4FE9A3E29D08748006C0016 /* WebView.swift */,
 				C4FE9A3429D08712006C0016 /* Assets.xcassets */,
 				C4FE9A3629D08712006C0016 /* Preview Content */,
 			);
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4FE9A3329D08711006C0016 /* ContentView.swift in Sources */,
+				C4FE9A3F29D08748006C0016 /* WebView.swift in Sources */,
+				C4FE9A4129D0877E006C0016 /* MainView.swift in Sources */,
 				C4FE9A3129D08711006C0016 /* SwiftUI_Webview_CookiesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +199,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -273,8 +277,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,8 +306,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
